@@ -87,7 +87,7 @@
 
 <h1>Fact Garden 🌱: An Interactive Multiplication Table</h1>
 
-<label for="hue">Adjust Hue:</label>
+<label for="hue">Adjust Color:</label>
 <input type="range" id="hue" min="0" max="360" value="0">
 
 <div class="grid-container">
@@ -126,7 +126,7 @@
   // 🌈 Color control
   const hueSlider = document.getElementById('hue');
   hueSlider.addEventListener('input', () => {
-    container.style.filter = `hue-rotate({hueSlider.value}deg)`;
+    container.style.filter = `hue-rotate(${hueSlider.value}deg)`;
   });
 </script>
 
